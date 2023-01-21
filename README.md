@@ -15,3 +15,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <https://firebase.google.com/docs/web/setup>
 
 <https://firebase.google.com/>
+
+## BrowserRouter
+
+<https://reactrouter.com/en/main/router-components/browser-router>
+
+## Install Tailwind CSS
+
+<https://tailwindcss.com/docs/guides/create-react-app>
