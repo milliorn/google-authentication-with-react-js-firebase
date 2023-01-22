@@ -23,3 +23,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Install Tailwind CSS
 
 <https://tailwindcss.com/docs/guides/create-react-app>
+
+## react-google-button
+
+`npm i react-google-button`
+
+<https://www.npmjs.com/package/react-google-button>
+
+<https://github.com/prescottprue/react-google-button>
+
+<https://developers.google.com/identity/sign-in/web/build-button>
+
+## react-router-dom
+
+`npm i react-router-dom`
+
+<https://reactrouter.com/en/main>
+
+<https://www.npmjs.com/package/react-router-dom>
