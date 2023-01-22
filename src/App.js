@@ -1,3 +1,17 @@
-export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { AuthContextProvider } from "./context/AuthContext";
+
+function App() {
+  return (
+    <div>
+      <AuthContextProvider>
+        <Navbar />
+        <Routes></Routes>
+      </AuthContextProvider>
+    </div>
+  );
 }
+
+export default App;
