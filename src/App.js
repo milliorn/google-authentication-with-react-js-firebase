@@ -10,7 +10,9 @@ function App() {
       <AuthContextProvider>
         <Navbar />
         <Routes>
+          <Route path="/"/>
           <Route path="/signin" element={<Signin />} />
+          <Route path="/account"/>
         </Routes>
       </AuthContextProvider>
     </div>
