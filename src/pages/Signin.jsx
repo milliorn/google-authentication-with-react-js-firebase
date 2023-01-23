@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { GoogleButton } from "react-google-button";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ function Signin() {
     try {
       await googleSignIn();
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -19,11 +19,11 @@ function Signin() {
     if (user != null) {
       navigate("/account");
     }
-  }, []);
+  }, [user]);
 
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold py-8">Sign In</h1>
+      <h1 className="text-center text-3xl font-bold py-8">Sign in</h1>
       <div className="max-w-[240px] m-auto py-4">
         <GoogleButton onClick={handleGoogleSignIn} />
       </div>
