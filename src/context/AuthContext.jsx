@@ -9,17 +9,17 @@ import { auth } from "../firebase";
 
 const AuthContext = createContext();
 
-export const AuthContextProvider = ({ children }) => {
+export function AuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
-  const googleSignIn = () => {
+  function googleSignIn() {
     const provider = new GoogleAuthProvider();
     signInWithRedirect(auth, provider);
-  };
+  }
 
-  const logOut = () => {
+  function logOut() {
     signOut(auth);
-  };
+  }
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -36,8 +36,8 @@ export const AuthContextProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-};
+}
 
-export const UserAuth = () => {
+export function UserAuth() {
   return useContext(AuthContext);
-};
+}
