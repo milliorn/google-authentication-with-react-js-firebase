@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
-function Navbar() {
+function Navbar(): JSX.Element {
   const { user, logOut } = UserAuth();
 
-  const handleSignOut = async () => {
+  async function handleSignOut(): Promise<void> {
     try {
       await logOut();
     } catch (error) {
       console.log(error);
     }
-  };
+  }
 
   return (
     <div className="flex justify-between bg-gray-200 w-full p-4">
