@@ -6,7 +6,7 @@ import Signin from "./pages/Signin";
 import { AuthContextProvider } from "./context/AuthContext";
 import { Route, Routes } from "react-router-dom";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div>
       <AuthContextProvider>
