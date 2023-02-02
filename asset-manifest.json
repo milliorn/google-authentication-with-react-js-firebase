@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/google-authentication-with-react-js-firebase/static/css/main.5a6bb56b.css",
+    "main.js": "/google-authentication-with-react-js-firebase/static/js/main.14c875d0.js",
+    "index.html": "/google-authentication-with-react-js-firebase/index.html",
+    "main.5a6bb56b.css.map": "/google-authentication-with-react-js-firebase/static/css/main.5a6bb56b.css.map",
+    "main.14c875d0.js.map": "/google-authentication-with-react-js-firebase/static/js/main.14c875d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a6bb56b.css",
+    "static/js/main.14c875d0.js"
+  ]
+}
