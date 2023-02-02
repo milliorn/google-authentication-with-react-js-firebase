@@ -1,4 +1,4 @@
-# Google Authentication With React JS & Firebase - Sign In With Google - Firebase
+# Google Authentication With React & Firebase - Sign In With Google - Firebase
 
 ## Getting Started with Create React App
 
