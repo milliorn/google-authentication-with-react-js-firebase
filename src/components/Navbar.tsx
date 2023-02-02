@@ -13,12 +13,14 @@ function Navbar(): JSX.Element {
   }
 
   return (
-    <div className="flex justify-between bg-gray-300 w-full p-4">
+    <div className="flex justify-between bg-gray-600 w-full p-4">
       <h1 className="text-center text-xl font-bold">Firebase Google Auth</h1>
       {user?.displayName ? (
         <button onClick={handleSignOut}>Logout</button>
       ) : (
-        <Link to="/signin">Sign in</Link>
+        <Link to="/signin">
+          <span className="text-white">Sign in</span>
+        </Link>
       )}
     </div>
   );

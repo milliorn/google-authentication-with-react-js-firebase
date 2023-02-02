@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { GoogleButton } from "react-google-button";
+import GoogleButton from "react-google-button";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
@@ -19,12 +19,12 @@ function Signin() {
     if (user != null) {
       navigate("/account");
     }
-  }, [user]);
+  }, [navigate, user]);
 
   return (
     <div>
       <h1 className="text-center text-3xl font-bold py-8">Sign in</h1>
-      <div className="max-w-[240px] m-auto py-4">
+      <div className="my-0 mx-auto py-4 flex items-center justify-center">
         <GoogleButton onClick={handleGoogleSignIn} />
       </div>
     </div>

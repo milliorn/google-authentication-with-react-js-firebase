@@ -19,7 +19,7 @@ function Account(): JSX.Element {
       </div>
       <button
         onClick={handleSignOut}
-        className="border p-4 my-8 flex justify-center mx-auto"
+        className="border-2 p-4 my-8 flex justify-center mx-auto border-black	"
       >
         Logout
       </button>
