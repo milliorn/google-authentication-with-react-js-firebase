@@ -26,5 +26,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
-        BRANCH: gh-pages
+        BASE_BRANCH:  gh-pages # The branch the action should deploy from.
+        BRANCH: main
         FOLDER: build
