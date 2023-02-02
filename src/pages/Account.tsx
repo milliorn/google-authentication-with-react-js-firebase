@@ -1,6 +1,6 @@
 import { UserAuth } from "../context/AuthContext";
 
-function Account() {
+function Account(): JSX.Element {
   const { logOut, user } = UserAuth();
 
   const handleSignOut = async () => {
