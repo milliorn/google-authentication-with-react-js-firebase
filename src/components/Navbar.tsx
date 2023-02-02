@@ -13,8 +13,8 @@ function Navbar(): JSX.Element {
   }
 
   return (
-    <div className="flex justify-between bg-gray-200 w-full p-4">
-      <h1 className="text-center text-2xl font-bold">Firebase Google Auth</h1>
+    <div className="flex justify-between bg-gray-300 w-full p-4">
+      <h1 className="text-center text-xl font-bold">Firebase Google Auth</h1>
       {user?.displayName ? (
         <button onClick={handleSignOut}>Logout</button>
       ) : (
